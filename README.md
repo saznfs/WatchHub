@@ -3,7 +3,7 @@
 
 Welcome to **WatchHub**, a fully responsive and interactive watch-selling website designed to offer users a modern and engaging shopping experience. This project showcases a blend of aesthetics, animations, and functional UI elements tailored for both desktop and mobile users.
 
-![WatchHub Banner](./assets/watchhub-banner.png)
+![WatchHub Banner](main/logo/logo1.png)
 
 ---
 
