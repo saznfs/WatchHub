@@ -63,19 +63,69 @@
 
     <!-- Header Section -->
     <header>
+		
+		<!-- Hamburger icon (only shows on mobile) -->
+		<div class="hamburger" onclick="toggleMenu()">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+
+		<!-- Mobile menu (initially hidden) -->
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="close-btn" onclick="closeMenu()"><img src="main/icons/close.png" alt="close icon" /></button>
+			<div class="ham-menu-login">
+				<a href="login.html">
+					<lord-icon
+						src="https://cdn.lordicon.com/kdduutaw.json"
+						trigger="loop"
+						delay="1000"
+						state="hover-looking-around"
+						colors="primary:#121331,secondary:#000000">
+					</lord-icon>  
+					LOG IN
+				</a>
+			</div>
+			
+			<ul class="mobile-nav-list">
+				<li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+			</ul>
+			
+			<div class="contact-mobile-menu">
+				<div class="contact">
+					<i class="fa-solid fa-phone"></i> +94-77-2998266
+					<br>
+					<br>
+					<i class="fa-solid fa-envelope"></i> <span>watchhub@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		<!-- outside of hamburger menu -->
+		<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
         <div class="logo">
-            <a href="index.html"><img src="main/logo/logo1.png" alt="WatchHub Logo" class="header-logo" /></a>
+            <a href="index.html">
+				<img src="main/logo/logo1.png" alt="WatchHub Logo" class="header-logo" />
+			</a>
         </div>
+		
         <nav>
             <ul>
-                <li><a href="#">SPECIAL OFFERS</a></li>
-                <li><a href="#">BRANDS</a></li>
-                <li><a href="#">MEN</a></li>
-                <li><a href="#">WOMEN</a></li>
-                <li><a href="#">LUXURY</a></li>
-                <li><a href="#">STORES</a></li>
+                <li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
             </ul>
         </nav>
+		
         <div class="nav-icons">
             <div class="search-box">
                 <input type="text" placeholder="Search">
@@ -94,8 +144,7 @@
 					trigger="loop"
 					delay="1000"
 					state="hover-looking-around"
-					colors="primary:#121331,secondary:#000000"
-					style="width:2.1vw;height:2.1vw">
+					colors="primary:#121331,secondary:#000000">
 				</lord-icon>
 			</a>
 			
@@ -104,8 +153,7 @@
 					src="https://cdn.lordicon.com/aydxrkfl.json"
 					trigger="loop"
 					delay="1000"
-					colors="primary:#121331,secondary:#000000"
-					style="width:2.1vw;height:2.1vw">
+					colors="primary:#121331,secondary:#000000">
 				</lord-icon>
 			</a>
 			
@@ -115,12 +163,25 @@
 					trigger="loop"
 					delay="1000"
 					colors="primary:#121331,secondary:#000000"
-					style="width:2.4vw;height:2.4vw">
+					class="addtocard-icon">
 				</lord-icon>
 			</a>
 
         </div>
+		
     </header>
+	
+	<!-- mobile search bar -->
+		<div class="mobile-search">
+			<input type="text" placeholder="Search...">
+			<lord-icon
+			  src="https://cdn.lordicon.com/wjyqkiew.json"
+			  trigger="loop"
+			  delay="1000"
+			  colors="primary:#121331,secondary:#000000"
+			  style="width: 24px; height: 24px;">
+			</lord-icon>
+		</div>
 	
 	<div class="slider-container">
 		<div class="slider" id="slider">
@@ -289,36 +350,7 @@
 		</div>
 	  </div>
 	</div>
-
-
-
-<script>
-	function updateClock() {
-	  const now = new Date();
-	  const hour = String(now.getHours()).padStart(2, '0');
-	  const minute = String(now.getMinutes()).padStart(2, '0');
-	  const second = String(now.getSeconds()).padStart(2, '0');
-	  
-	  // Update the clock with hour, minute, and second
-	  document.getElementById('hour').textContent = hour;
-	  document.getElementById('minute').textContent = minute;
-	  document.getElementById('second').textContent = second;
-	}
-
-	setInterval(updateClock, 1000); // Update every second
-	updateClock(); // Initial call to set the clock immediately
-</script>
-  
-<script>
-  document.querySelector(".allow-btn").addEventListener("click", function () {
-    document.getElementById("notify-popup").style.display = "none";
-  });
-
-  document.querySelector(".later-btn").addEventListener("click", function () {
-    document.getElementById("notify-popup").style.display = "none";
-  });
-</script>
-
+	
 <script src="index/script.js"></script>
 </body>
 </html>
