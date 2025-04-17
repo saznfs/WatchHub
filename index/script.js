@@ -42,3 +42,52 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+
+// Hamburger Menu 
+	const mobileMenu = document.getElementById("mobileMenu");
+	const overlay = document.getElementById("overlay");
+	const hamburger = document.querySelector(".hamburger");
+
+	function toggleMenu() {
+	  mobileMenu.classList.toggle("active");
+	  overlay.classList.toggle("active");
+	  hamburger.classList.toggle("hide");
+	}
+
+	function closeMenu() {
+	  mobileMenu.classList.remove("active");
+	  overlay.classList.remove("active");
+	  hamburger.classList.remove("hide");
+	}
+  // Optional: Close menu when a link is clicked (for smooth UX)
+  document.querySelectorAll(".mobile-nav-list a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+  
+  
+// Clock Details
+function updateClock() {
+	  const now = new Date();
+	  const hour = String(now.getHours()).padStart(2, '0');
+	  const minute = String(now.getMinutes()).padStart(2, '0');
+	  const second = String(now.getSeconds()).padStart(2, '0');
+	  
+	  // Update the clock with hour, minute, and second
+	  document.getElementById('hour').textContent = hour;
+	  document.getElementById('minute').textContent = minute;
+	  document.getElementById('second').textContent = second;
+	}
+
+	setInterval(updateClock, 1000); // Update every second
+	updateClock(); // Initial call to set the clock immediately
+	
+	
+// Notify Popup allow,close button Details
+ document.querySelector(".allow-btn").addEventListener("click", function () {
+    document.getElementById("notify-popup").style.display = "none";
+  });
+
+  document.querySelector(".later-btn").addEventListener("click", function () {
+    document.getElementById("notify-popup").style.display = "none";
+  });
