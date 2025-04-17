@@ -174,6 +174,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
 }
+
 .search-box {
     background: #f4f4f4;
     padding: 0.26vw 0.42vw;
@@ -197,13 +198,24 @@ nav ul li a:hover{
     font-size: 1vw;
 }
 
+lord-icon {
+	width:2.1vw;
+	height:2.1vw;
+}
+
 .nav-icons lord-icon {
     margin-left: 0.78vw;
     cursor: pointer;
 }
 
-.nav-icons lord-icon:hover{
-	color: #2ea5cd;
+.addtocard-icon {
+	width: 2.4vw;
+	height: 2.4vw;
+}
+
+/*mobile search bar*/
+.mobile-search {
+  display: none;
 }
 
 /*main image home page*/
@@ -502,28 +514,203 @@ nav ul li a:hover{
   color: #000;
 }
 
+/* Overlay behind the menu */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Show overlay when menu is open */
+.overlay.active {
+  display: block;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+/* Close button inside menu */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1100;
+  position: relative;
+}
+
+.hamburger.hide {
+  display: none;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.ham-menu-login {
+	margin-top: -20px;
+}
+.ham-menu-login a {
+	text-decoration: none;
+	color: black;
+	font-size: 5vw;
+}
+
+
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav-list li {
+  margin: 10px 0;
+}
+
+.mobile-nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.contact-mobile-menu {
+	font-size: 16px;
+	color: white;
+	background-color: black;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.contact {
+	padding-left: 30px;
+}
+
+.contact-mobile-menu span {
+	font-size: 14px;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+	
+	.ham-menu-login lord-icon {
+		height: 7vw;
+		width: 7vw;
+		padding-top: 13px;
+	}
+	
+	.mobile-menu img {
+		width: 5vw;
+	}
+	
+	.search-box {
+		display: none;
+	}
+	
+	.top-bar {
+		display: none;
+	}
+	
+	.notify-popup {
+		display: none;
+	}
+	
+	.hamburger {
+		display: flex;
+	}
 
-  .footer-links {
-    flex-direction: column;
-    width: 100%;
-  }
+	nav ul {
+		display: none;
+	}
+	
+	.header-logo {
+		flex: 1;
+		text-align: center;
+		width: 19vw;
+		padding-left: 10vw;
+	}
 
-  .subscribe-form {
-    flex-direction: column;
-  }
+	.nav-icons {
+		gap: 0.1vw;
+	}
+	
+	lord-icon {
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.addtocard-icon {
+		width: 6vw;
+		height: 6vw;
+	}
+	
+	.mobile-search{
+		background: #f4f4f4;
+		border-radius: 1.04vw;
+		display: flex;
+		align-items: center;
+		margin-bottom: 2vw;
+		margin-left: 4.5vw;
+		margin-right: 4.5vw;
+		margin-top: 0;
+	}
+	
+	.mobile-search input {
+		border: none;
+		background: transparent;
+		outline: none;
+		font-size: 3vw;
+		width: 100%;
+	}
 
-  .subscribe-form input,
-  .subscribe-form button {
-    width: 100%;
-    margin-bottom: 0.52vw; /* 10px */
-  }
+	
+	
+	/* Prevent zoom on mobile inputs */
+	input, textarea {
+		font-size: 16px;
+		touch-action: manipulation;
+	}
 }
 
 
