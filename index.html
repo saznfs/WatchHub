@@ -173,14 +173,15 @@
 	
 	<!-- mobile search bar -->
 		<div class="mobile-search">
-			<input type="text" placeholder="Search...">
+			
 			<lord-icon
 			  src="https://cdn.lordicon.com/wjyqkiew.json"
 			  trigger="loop"
 			  delay="1000"
 			  colors="primary:#121331,secondary:#000000"
-			  style="width: 24px; height: 24px;">
+			  style="width: 17px; height: 17px;">
 			</lord-icon>
+			<input type="text" placeholder="Search">
 		</div>
 	
 	<div class="slider-container">
@@ -209,8 +210,7 @@
 				src="https://cdn.lordicon.com/upkivhua.json"
 				trigger="loop"
 				delay="2000"
-				colors="primary:#ffffff,secondary:#ffffff"
-				style="width:3.5vw;height:3.5vw">
+				colors="primary:#ffffff,secondary:#ffffff">
 			</lord-icon>
 			<p>Islandwide Free Delivery on Orders Above Rs.7000</p>
 		</div>
@@ -219,8 +219,7 @@
 				src="https://cdn.lordicon.com/ysqeagpz.json"
 				trigger="loop"
 				delay="2000"
-				colors="primary:#ffffff,secondary:#ffffff"
-				style="width:3.5vw;height:3.5vw">
+				colors="primary:#ffffff,secondary:#ffffff">
 			</lord-icon>
 			<p>Cash on Delivery up to Rs.25,000</p>
 		</div>
@@ -230,8 +229,7 @@
 				src="https://cdn.lordicon.com/lyrrgrsl.json"
 				trigger="loop"
 				delay="2000"
-				colors="primary:#ffffff,secondary:#ffffff"
-				style="width:3.5vw;height:3.5vw">
+				colors="primary:#ffffff,secondary:#ffffff">
 			</lord-icon>
 			<p>10% Off on First Order</p>
 		</div>
@@ -240,8 +238,7 @@
 				src="https://cdn.lordicon.com/gqzfzudq.json"
 				trigger="loop"
 				delay="2000"
-				colors="primary:#ffffff,secondary:#ffffff"
-				style="width:3.5vw;height:3.5vw">
+				colors="primary:#ffffff,secondary:#ffffff">
 			</lord-icon>
 			<p>Ships Within 24 Hours</p>
 		</div>
@@ -250,8 +247,7 @@
 				src="https://cdn.lordicon.com/uqpazftn.json"
 				trigger="loop"
 				delay="2000"
-				colors="primary:#ffffff,secondary:#ffffff"
-				style="width:3.5vw;height:3.5vw">
+				colors="primary:#ffffff,secondary:#ffffff">
 			</lord-icon>
 			<p>1 Year Warranty</p>
 		</div>
@@ -272,6 +268,7 @@
 	
 	<!-- Footer Section -->
 	<footer class="footer">
+		<!-- Desktop view footer section -->
 	  <div class="footer-container">
 		<div class="footer-left">
 		  <a href="index.html"><img src="main/logo/logo1.png" alt="WatchHub Logo" class="footer-logo" /></a>
@@ -326,9 +323,75 @@
 		</div>
 	  </div>
 	  
-	  <div class="footer-bottom">
+	  
+		<!-- mobile view footer section -->
+		
+		<div class="accordion-container">
+
+		  <!-- Policies and Order -->
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Policies And Order</span>
+			  <span class="accordion-arrow"><img src="main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>Authenticity Guarantee</li>
+				<li>Privacy Policy</li>
+				<li>Return, Exchange & Refund Policy</li>
+				<li>Terms and Conditions</li>
+				<li>Warranty Information</li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <!-- Help -->
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Help</span>
+			  <span class="accordion-arrow"><img src="main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>FAQ's</li>
+				<li>My Account</li>
+				<li>Track My Order</li>
+				<li>Sitemap</li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <!-- Company -->
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Company</span>
+			  <span class="accordion-arrow"><img src="main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>Blog</li>
+				<li>Contact Us</li>
+				<li>Our Stores</li>
+			  </ul>
+			</div>
+		  </div>
+
+		</div>
+		
+		<div class="social-links">
+			<h4>Stay connected</h4>
+			<div class="social-icons">
+			  <a href="#"><i class="fab fa-instagram"></i></a>
+			  <a href="#"><i class="fab fa-facebook-f"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+			  <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
 		<p class="copyright">© 2025, WatchHub — All Rights Reserved</p>
-	  </div>
+		</div>
+	  
 	</footer>
 	
 	<!-- after Subscribe discount notify -->
