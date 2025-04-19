@@ -91,3 +91,26 @@ function updateClock() {
   document.querySelector(".later-btn").addEventListener("click", function () {
     document.getElementById("notify-popup").style.display = "none";
   });
+  
+  
+// dropdown footer menu for mobile
+function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    const arrow = header.querySelector('.accordion-arrow');
+
+    // Close other open sections
+    document.querySelectorAll('.accordion-content').forEach(section => {
+      if (section !== content) {
+        section.classList.remove('open');
+      }
+    });
+    document.querySelectorAll('.accordion-arrow').forEach(ar => {
+      if (ar !== arrow) {
+        ar.classList.remove('rotate');
+      }
+    });
+
+    // Toggle current section
+    content.classList.toggle('open');
+    arrow.classList.toggle('rotate');
+}
