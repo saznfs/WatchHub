@@ -259,6 +259,11 @@ lord-icon {
     max-width: 10.42vw;
 }
 
+.benefit lord-icon {
+	width:3.5vw;
+	height:3.5vw;
+}
+
 .benefit p {
     font-size: 1vw;
     margin-top: 0.5vw;
@@ -631,9 +636,20 @@ lord-icon {
 	font-size: 14px;
 }
 
+.accordion-container {
+	display: none;
+}
+
+.social-links {
+	display: none;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 	
+	body {
+		margin-top: 15px;
+	} 
 	.ham-menu-login lord-icon {
 		height: 7vw;
 		width: 7vw;
@@ -656,6 +672,10 @@ lord-icon {
 		display: none;
 	}
 	
+	.footer-links {
+		display: none;
+	}
+	
 	.hamburger {
 		display: flex;
 	}
@@ -665,10 +685,9 @@ lord-icon {
 	}
 	
 	.header-logo {
-		flex: 1;
-		text-align: center;
-		width: 19vw;
-		padding-left: 10vw;
+		width: 80px;
+		padding-left: 50px;
+		padding-bottom: 10px;
 	}
 
 	.nav-icons {
@@ -685,31 +704,218 @@ lord-icon {
 		height: 6vw;
 	}
 	
-	.mobile-search{
-		background: #f4f4f4;
-		border-radius: 1.04vw;
-		display: flex;
-		align-items: center;
-		margin-bottom: 2vw;
-		margin-left: 4.5vw;
-		margin-right: 4.5vw;
-		margin-top: 0;
-	}
+	.mobile-search {
+  background: #f4f4f4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2vw 3vw;
+  margin: 0 4.5vw 10px 4.5vw;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
 	
 	.mobile-search input {
-		border: none;
-		background: transparent;
-		outline: none;
-		font-size: 3vw;
-		width: 100%;
-	}
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  flex: 1;
+}
 
-	
+.mobile-search input::placeholder {
+    color: #000;
+	padding-left: 5px;
+	font-family: 'Poppins', sans-serif;
+}
 	
 	/* Prevent zoom on mobile inputs */
 	input, textarea {
 		font-size: 16px;
 		touch-action: manipulation;
+	}
+	
+	 /* ===== Slider ===== */
+  .slider-container img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .slider {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+  }
+
+/* ===== benefit icon ===== */
+.benefit lord-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.digital-clock {
+	margin: 0;
+}
+
+.clock-heading {
+    font-size: 15px;
+	line-height: 1.1;
+	margin-top: -2px;
+}
+
+.clock-image img {
+	margin-top: 20px;
+	padding-top: 3px;
+}
+
+.time-quote {
+	font-size: 8px;
+}
+
+	/* dropdown footer menu */
+	.accordion-container {
+	  display: block;
+      margin: auto;
+	  font-size: 13px;
+	  padding-left: 5px;
+	  padding-right: 4px;
+    }
+
+    .accordion-section {
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .accordion-arrow {
+      transition: transform 0.3s ease;
+    }
+	
+	.accordion-arrow img {
+		width: 9px;
+	}
+
+    .accordion-arrow.rotate {
+      transform: rotate(180deg);
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+    .accordion-content.open {
+      max-height: 500px; /* Adjust based on content */
+    }
+
+    .accordion-content ul {
+      list-style: none;
+      padding: 0 5px;
+    }
+
+    .accordion-content li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      transition: color 0.3s;
+    }
+
+    .accordion-content li:hover {
+      color: #007bff;
+    }
+
+    .accordion-content li:last-child {
+      border-bottom: none;
+    }
+	
+	.social-links {
+		display: block;
+		align-items: center;
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	.social-links h4 {
+		font-weight: normal;
+		padding-top: 10px;
+		padding-bottom: 4px;
+		margin: 0;
+	}
+	
+	.social-icons a {
+		font-size: 19px;
+		padding: 0 4px;
+		margin-bottom: 20px;
+	}
+	
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 13px;
+	}
+	
+	 .footer-left {
+    flex: 1 1 100%;
+    margin-bottom: 5vw; /* more space for smaller screens */
+  }
+
+  .footer-logo {
+    width: 50vw;
+    margin: 8px auto 3vw;
+  }
+
+  .subscribe-form {
+    display: flex;
+    height: auto;
+    justify-content: center;
+	text-align: center;
+	max-width: none;
+	margin-bottom: 15px;
+  }
+
+  .subscribe-form input {
+    flex: 1;
+    padding: 2.5vw;
+    border: 0.4vw solid #000;
+    border-right: none;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    font-size: 4vw;
+    outline: none;
+  }
+
+  .subscribe-form button {
+    padding: 2.5vw 4vw;
+    border: 0.4vw solid #000;
+    border-left: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 4vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+	
+	.footer-bottom p {
+		font-size: 13.5px;
+	}
+	
+	.footer-bottom {
+		margin-top: 20px;
+	}
+	.footer {
+		padding-left: 12px;
+		padding-right: 12px;
 	}
 }
 
