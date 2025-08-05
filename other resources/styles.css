@@ -1,0 +1,658 @@
+/* Reset and Base Styling */
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Ensure font matches HTML */
+    color: black;
+}
+
+body {
+    background-color: #ed7f34;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    background-color: #ed7f34;
+    width: 100%;
+    top: 0;
+    
+}
+
+.logo img {
+    width: 20%; /* Adjust logo size here */
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd; /* Adds hover effect */
+}
+
+.search-bar {
+    
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    background: transparent;
+    color: black;
+    width: 150px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-bar input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+/* Banner Section */
+.banner {
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-home {
+	background: url('images/home.jpg') no-repeat center center/cover;
+}
+
+.banner h1 {
+	font-family: 'Arimo', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    max-width: 1200px;
+    padding: 40px;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+.left-content {
+    text-align: left;
+    font-weight: bold;
+    line-height: 0.8;
+    margin-top: 70px;
+    flex: 1;
+}
+
+.left-content h1 {
+    font-size: 80px;
+}
+
+.left-content h2 {
+    font-size: 40px;
+}
+
+.right-content {
+    flex: 1;
+}
+
+.right-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.about-link:hover {
+    color: #555;
+}
+
+/* Destination Short Section */
+.destinationShort {
+    background-color: #F6F6F6;
+    display: flex;
+    text-align: left;
+    padding: 100px 110px;
+    gap: 40px;
+}
+
+.destinationShort h1 {
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.destinationShort h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.left-destinationShort, .right-destinationShort {
+    flex: 1;
+}
+
+.right-destinationShort {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.destination-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.destination-link:hover {
+    color: #555;
+}
+
+/* Footer Styling */
+.footer {
+    background: url('images/footer.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer img {
+	width: 33%; /* Adjust pic size here */
+    height: auto;
+}
+
+.footer-signup {
+    margin-bottom: 2.5%;
+}
+
+.footer-signup h2 {
+    font-size: 20px;
+	color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.signup-form {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 40%;
+    width: 100%;
+	
+}
+
+.signup-form input[type="email"] {
+    padding-left: 4%;
+	padding-bottom: 3.3%;
+	padding-top: 2.8%;
+	
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+}
+
+.signup-form button {
+	padding-right: 4%;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.signup-form input::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+	font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ddd;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+	color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px auto;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+}
+
+.social-media a:hover {
+    background: #fff;
+    color: #444;
+}
+
+.social-media a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-media a:hover i {
+    color: #444;
+}
+
+/* After banner styles */
+.after-banner {
+    padding-top: 5%;
+	padding-left: 16%;
+	padding-right: 16%;
+    text-align: left;
+}
+
+.after-banner ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.after-banner-link {
+	text-decoration: none;
+}
+
+.after-banner .item {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.after-banner .item::after {
+    content: ">";
+    margin-left: 5px;
+    color: #333;
+}
+
+.after-banner .item:last-child::after {
+    content: "";
+}
+
+/* After Banner text styles */
+.after-banner-text {
+	padding-top:6%;
+}
+
+.after-banner-text .inner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.after-banner-text .inner p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.after-banner-text img {
+	width: 100%;
+	vertical-align: top;
+    max-width: 100%;
+	text-align: center;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+/*Destinations page styles*/
+
+.banner-destinations {
+	background: url('images/destinations.jpg') no-repeat center center/cover;
+}
+
+.after-destinations-text h2 {
+	padding-bottom: 2%;
+}
+
+.after-destinations-text p {
+	line-height: 1.7;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 5%;
+	padding-left: 16%;
+	padding-right: 16%;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 270px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Card Title */
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Card Text */
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Explore Link */
+.explore-link {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.explore-link:hover {
+    color: #0056b3;
+}
+
+/*key-experiences page styles*/
+.banner-keyexperiences {
+	background: url('images/key-experiences.jpg') no-repeat center center/cover;
+}
+
+/*About-Us page styles*/
+.banner-about {
+	background: url('images/about.jpg') no-repeat center center/cover;
+}
+
+/*Contact-Us page styles*/
+.banner-contact {
+	background: url('images/contact.jpg') no-repeat center center/cover;
+}
+
+/*Faq page styles*/
+.banner-faq {
+	background: url('images/faq.jpg') no-repeat center center/cover;
+} 
+
+iframe {
+    width: 100%; /* Make the iframe take up the full width of its container */
+    height: 850px; /* Set initial height to 0 */
+    padding-top: 5%; /* Aspect ratio: 16:9 (can adjust for other ratios) */
+    border: none; /* Remove border */
+    position: relative; /* Position relative for responsive behavior */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+}  
+
+@media (max-width: 768px) {
+	
+	.banner-home {
+		background: url('images/mobile-home.jpg') no-repeat center center/cover;
+		height: 50vh;
+	}
+	
+	.navbar {
+        align-items: flex-start;
+    }
+	
+	.logo {
+		display: none;
+	}
+	
+    /* Hide the normal navigation links and search bar on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+		
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+        margin: 6px 0;
+        background-color: #333;
+    }
+
+    /* Show the nav links when active */
+    .nav-links.active {
+        display: block;
+    }
+
+	
+    /* Search bar */
+    .search-bar {
+		display: none;
+    }
+
+    .banner {
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    /* Adjusting the after-banner section */
+    .after-banner {
+        padding: 20px;
+        text-align: center;
+    }
+	
+	.left-content, .right-content {
+    text-align: center;
+	}
+	
+	.destinationShort {
+		text-align: center;
+	}
+	
+    /* Card section */
+    .card-container {
+        align-items: center;
+        padding: 1px;	
+        display: column;
+        gap: 10px;	
+    }
+	
+    .card {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .explore-link {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+	/* Footer Adjustments */
+    .footer {
+        padding-top: 5%;
+		padding-bottom: 6%;
+		padding-left: 2%;
+		padding-right: 2%;
+    }
+	
+	.footer img {
+		width: 100%;
+	}
+
+    .signup-form {  
+        width: 100%; /* Makes it full width on small screens */
+		max-width: 70%;
+    }  
+
+    /* Social Media Icon Adjustments */
+    .social-media a {
+        width: 30px; /* Reduces icon size */
+        height: 30px;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left-content h1 {
+        font-size: 48px;
+    }
+    .left-content h2 {
+        font-size: 24px;
+    }
+    .destinationShort {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .destinationShort h1 {
+        font-size: 36px;
+    }
+    .destinationShort h2 {
+        font-size: 24px;
+    }
+}
