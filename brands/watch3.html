@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchHub</title>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="main/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="main/favicon/favicon-16x16.png">
+	<link rel="manifest" href="main/favicon/site.webmanifest">
+	
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../main/styles.css">
+	<link rel="stylesheet" href="../watches/styles.css">
+	<script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+	
+    
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fa-solid fa-phone"></i> +94772998266 |&nbsp;
+            <i class="fa-solid fa-envelope"></i> watchhub@gmail.com
+        </div>
+        <div class="scrolling-container">
+            <div class="scrolling-text">
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000
+            </div>
+        </div>
+    </div>
+
+  
+    <header>
+		
+	
+		<div class="hamburger" onclick="toggleMenu()">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+
+		
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="close-btn" onclick="closeMenu()"><img src="../main/icons/close.png" alt="close icon" /></button>
+			<div class="ham-menu-login">
+				<a href="../login.html">
+					<lord-icon
+						src="https://cdn.lordicon.com/kdduutaw.json"
+						trigger="loop"
+						delay="1000"
+						state="hover-looking-around"
+						colors="primary:#121331,secondary:#000000">
+					</lord-icon>  
+					LOG IN
+				</a>
+			</div>
+			
+			<ul class="mobile-nav-list">
+				<li><a href="../special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="../brands.html">BRANDS</a></li>
+                <li><a href="../men.html">MEN</a></li>
+                <li><a href="../women.html">WOMEN</a></li>
+                <li><a href="../luxury.html">LUXURY</a></li>
+                <li><a href="../stores.html">STORES</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+			</ul>
+			
+			<div class="contact-mobile-menu">
+				<div class="contact">
+					<i class="fa-solid fa-phone"></i> +94-77-2998266
+					<br>
+					<br>
+					<i class="fa-solid fa-envelope"></i> <span>watchhub@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        <div class="logo">
+            <a href="../index.html">
+				<img src="../main/logo/logo1.png" alt="WatchHub Logo" class="header-logo" />
+			</a>
+        </div>
+		
+        <nav>
+            <ul>
+                <li><a href="../special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="../brands.html">BRANDS</a></li>
+                <li><a href="../men.html">MEN</a></li>
+                <li><a href="../women.html">WOMEN</a></li>
+                <li><a href="../luxury.html">LUXURY</a></li>
+                <li><a href="../stores.html">STORES</a></li>
+            </ul>
+        </nav>
+		
+        <div class="nav-icons">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <lord-icon
+					src="https://cdn.lordicon.com/wjyqkiew.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					style="width:2.1vw;height:2.1vw">
+				</lord-icon>
+            </div>
+			
+			<a href="../login.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/kdduutaw.json"
+					trigger="loop"
+					delay="1000"
+					state="hover-looking-around"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="../wishlist/wishlist.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/aydxrkfl.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="../card/card.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/slkvcfos.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					class="addtocard-icon">
+				</lord-icon>
+			</a>
+
+        </div>
+		
+    </header>
+	
+
+		<div class="mobile-search">
+			
+			<lord-icon
+			  src="https://cdn.lordicon.com/wjyqkiew.json"
+			  trigger="loop"
+			  delay="1000"
+			  colors="primary:#121331,secondary:#000000"
+			  style="width: 17px; height: 17px;">
+			</lord-icon>
+			<input type="text" placeholder="Search">
+		</div>
+	
+	
+	<div class="product-container">
+	 
+	  <div class="product-gallery" id="gallery">
+	 
+	  <img class="preview" id="previewImg" src="01rolex/watches/watch (3).jpg" alt="Watch preview">
+
+	  
+	  <button class="nav prev" id="prevBtn">&#10094;</button>
+	  <button class="nav next" id="nextBtn">&#10095;</button>
+
+	
+	  <div class="thumb-row" id="thumbRow">
+		<img src="01rolex/watches/watch (3).jpg"  data-index="0" class="thumb active">
+		<img src="01rolex/watches/watch (2).jpg"  data-index="1" class="thumb">
+		<img src="01rolex/watches/watch (1).jpg"  data-index="2" class="thumb">
+		<img src="01rolex/watches/watch (4).jpg"  data-index="3" class="thumb">
+		<img src="01rolex/watches/watch (5).jpg"  data-index="4" class="thumb">
+	  </div>
+	</div>
+
+	 
+	  <div class="product-details">
+		<h2>Rolex</h2>
+		<h3>Rolex GMT-Master II</h3>
+
+		<div class="price">
+		  Rs 12,995
+		  <p>Inclusive of all taxes</p>
+		</div>
+		
+
+		<div class="stock">✔ In Stock</div>
+
+		<div class="color-picker">
+		  <label>Color</label>
+		  <div class="color-options">
+			<div class="color-box" data-color="Black" style="background-color: #000;"></div>
+			<div class="color-box" data-color="Silver" style="background-color: #C0C0C0;"></div>
+			<div class="color-box" data-color="Gold" style="background-color: #FFD700;"></div>
+			<div class="color-box" data-color="Blue" style="background-color: #1E90FF;"></div>
+			<div class="color-box" data-color="Red" style="background-color: #D32F2F;"></div>
+		  </div>
+		</div>
+
+		<div class="size-picker">
+		  <label>Size</label>
+		  <div class="size-options">
+			<div class="size-box" data-size="36mm">36mm</div>
+			<div class="size-box" data-size="38mm">38mm</div>
+			<div class="size-box" data-size="40mm">40mm</div>
+			<div class="size-box" data-size="42mm">42mm</div>
+		  </div>
+		</div>
+
+
+		<div class="product-actions">
+			<a href="../checkout.html"><button class="buy-now">Buy Now</button>
+			</a>
+			
+			<a href=""><button class="add-cart">Add to Cart</button>
+			</a>
+		</div>
+	  </div>
+	</div>
+	
+	
+	<section class="product-info-box">
+	  
+	  <div class="description">
+		<h2>Product Description</h2>
+		<p>
+		  A refined <strong>Timex automatic watch</strong> designed for those who appreciate both form and function. The durable materials and precision automatic movement ensure reliable timekeeping, while the minimalist design makes it a versatile accessory for both business and casual wear. Perfect for those who value both style and functionality, this watch delivers long-lasting performance.
+		</p>
+	  </div>
+
+
+	  <div class="features">
+		<h2>Product Features</h2>
+		<ul>
+		  <li><strong>SKU:</strong> TWEG22105</li>
+		  <li><strong>Product Name:</strong> Watch</li>
+		  <li><strong>Gender:</strong> Men</li>
+		  <li><strong>Movement:</strong> Quartz</li>
+		  <li><strong>Dial Colour:</strong> Black</li>
+		  <li><strong>Case Material:</strong> Leather</li>
+		  <li><strong>Case Size:</strong> 40 mm</li>
+		  <li><strong>Case Shape:</strong> Round</li>
+		  <li><strong>Water Resistance:</strong> 30 m</li>
+		  <li><strong>Band Closure:</strong> Strap</li>
+		  <li><strong>Band Material:</strong> Leather</li>
+		  <li><strong>Band Colour:</strong> Black</li>
+		  <li><strong>Glass Type:</strong> Mineral Glass</li>
+		  <li><strong>Functions:</strong> 2 Hands</li>
+		  <li><strong>Warranty:</strong> 1 Year Limited Warranty</li>
+		  <li><strong>Net Quantity:</strong> 1 N</li>
+		</ul>
+	  </div>
+	</section>
+	
+	<section class="review-section">
+	  <h2>Customer Reviews</h2>
+	  <div class="reviews">
+		<div class="review-card">
+		  <div class="review-stars">★★★★★</div>
+		  <p class="review-text">Absolutely love this watch! The design is clean, elegant, and fits perfectly. Highly recommended.</p>
+		  <div class="review-author">– Nethmi</div>
+		</div>
+		<div class="review-card">
+		  <div class="review-stars">★★★★★</div>
+		  <p class="review-text">A solid timepiece with smooth performance. The leather strap feels premium and the dial is crisp.</p>
+		  <div class="review-author">– Imasha</div>
+		</div>
+		<div class="review-card">
+		  <div class="review-stars">★★★★★</div>
+		  <p class="review-text">This is a perfect gift! The packaging was neat and delivery was fast. Looks even better in person.</p>
+		  <div class="review-author">– Mikram</div>
+		</div>
+		<div class="review-card">
+		  <div class="review-stars">★★★★★</div>
+		  <p class="review-text">Stylish and durable. I’ve worn it for a month now and still works like day one.</p>
+		  <div class="review-author">– Shahla</div>
+		</div>
+		<div class="review-card">
+		  <div class="review-stars">★★★★★</div>
+		  <p class="review-text">Classic look, and it matches all my outfits. I’m very happy with this purchase!</p>
+		  <div class="review-author">– saz_nfs</div>
+		</div>
+	  </div>
+	</section>
+
+
+	
+	<footer class="footer">
+		
+	  <div class="footer-container">
+		<div class="footer-left">
+		  <a href="../index.html"><img src="../main/logo/logo1.png" alt="WatchHub Logo" class="footer-logo" /></a>
+		  <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+		  <p>Be the first to hear about new arrivals, by-invitation-only sales and special events</p>
+		  <form class="subscribe-form">
+			<input type="email" placeholder="Email" required />
+			<button type="submit">Subscribe</button>
+		  </form>
+		</div>
+
+		<div class="footer-links">
+		  <div class="footer-column policies">
+			<h4>Policies & Orders</h4>
+			<ul>
+			  <li><a href="../authenticity-guarantee.html">Authenticity Guarantee</a></li>
+			  <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+			  <li><a href="../refund-policy.html">Return, Exchange & Refund Policy</a></li>
+			  <li><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
+			  <li><a href="../warranty-information.html">Warranty Information</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column help">
+			<h4>Help</h4>
+			<ul>
+			  <li><a href="../faq.html">FAQs</a></li>
+			  <li><a href="../my-account.html">My Account</a></li>
+			  <li><a href="../track-my-order.html">Track my order</a></li>
+			  <li><a href="../sitemap.html">Sitemap</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column company">
+			<h4>Company</h4>
+			<ul>
+			  <li><a href="../blog.html">Blog</a></li>
+			  <li><a href="../contact-us.html">Contact Us</a></li>
+			  <li><a href="../our-stores.html">Our Stores</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column social">
+			<h4>Stay connected</h4>
+			<div class="social-icons">
+			  <a href="#"><i class="fab fa-instagram"></i></a>
+			  <a href="#"><i class="fab fa-facebook-f"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+			  <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  
+		
+		
+		<div class="accordion-container">
+
+	
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Policies And Order</span>
+			  <span class="accordion-arrow"><img src="../main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>Authenticity Guarantee</li>
+				<li>Privacy Policy</li>
+				<li>Return, Exchange & Refund Policy</li>
+				<li>Terms and Conditions</li>
+				<li>Warranty Information</li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Help</span>
+			  <span class="accordion-arrow"><img src="../main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>FAQ's</li>
+				<li>My Account</li>
+				<li>Track My Order</li>
+				<li>Sitemap</li>
+			  </ul>
+			</div>
+		  </div>
+
+
+		  <div class="accordion-section">
+			<div class="accordion-header" onclick="toggleAccordion(this)">
+			  <span>Company</span>
+			  <span class="accordion-arrow"><img src="../main/icons/down-icon.png" alt="down-icon" /></span>
+			</div>
+			<div class="accordion-content">
+			  <ul>
+				<li>Blog</li>
+				<li>Contact Us</li>
+				<li>Our Stores</li>
+			  </ul>
+			</div>
+		  </div>
+
+		</div>
+		
+		<div class="social-links">
+			<h4>Stay connected</h4>
+			<div class="social-icons">
+			  <a href="#"><i class="fab fa-instagram"></i></a>
+			  <a href="#"><i class="fab fa-facebook-f"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+			  <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+		<p class="copyright">© 2025, WatchHub — All Rights Reserved</p>
+		</div>
+	  
+	</footer>
+	
+	
+	<div id="discountModal" class="modal">
+	  <div class="modal-content">
+		<span class="close-btn" onclick="closeModal()">&times;</span>
+		<h2>Newsletter</h2>
+		<p>Subscribe Now to get exclusive member benefits and get special offer of <strong>10%</strong> to get you started</p>
+		<ul>
+		  <li>✅ The welcome voucher is non-transferable and redeemable only at our store</li>
+		  <li>✅ Discount applicable only on watches and selected products</li>
+		  <li>✅ You can unsubscribe anytime</li>
+		</ul>
+		<h3>Discount unlocked 🎉</h3>
+		<p>Thanks for subscribing. Copy your discount code and apply to your next order.</p>
+		<div class="discount-code">
+		  <input type="text" value="WELCOME10" readonly>
+		  <i class="ri-file-copy-line copy-icon" onclick="copyCode()"></i>
+		</div>
+	  </div>
+	</div>
+
+<script>
+  (function () {
+    const imgs   = [
+      '01rolex/watches/watch (1).jpg',
+      '01rolex/watches/watch (2).jpg',
+      '01rolex/watches/watch (3).jpg',
+      '01rolex/watches/watch (4).jpg',
+      '01rolex/watches/watch (5).jpg'
+    ];
+
+    let current = 0;
+
+    const preview  = document.getElementById('previewImg');
+    const prevBtn  = document.getElementById('prevBtn');
+    const nextBtn  = document.getElementById('nextBtn');
+    const thumbs   = document.querySelectorAll('.thumb');
+
+    function show(index) {
+      current = (index + imgs.length) % imgs.length;   // wrap-around
+      preview.src = imgs[current];
+      thumbs.forEach(t => t.classList.remove('active'));
+      thumbs[current].classList.add('active');
+    }
+
+    // arrow navigation
+    prevBtn.addEventListener('click', () => show(current - 1));
+    nextBtn.addEventListener('click', () => show(current + 1));
+
+    // thumbnail click
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => show(+t.dataset.index));
+    });
+  })();
+</script>
+
+<script>
+  const colorBoxes = document.querySelectorAll('.color-box');
+
+  colorBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      colorBoxes.forEach(b => b.classList.remove('selected'));
+      box.classList.add('selected');
+      const selectedColor = box.getAttribute('data-color');
+      console.log("Selected Color:", selectedColor);
+      // You can store or use selectedColor as needed
+    });
+  });
+</script>
+
+<script>
+  const sizeBoxes = document.querySelectorAll('.size-box');
+
+  sizeBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      sizeBoxes.forEach(b => b.classList.remove('selected'));
+      box.classList.add('selected');
+      const selectedSize = box.getAttribute('data-size');
+      console.log("Selected Size:", selectedSize);
+      // Use or store selectedSize as needed
+    });
+  });
+</script>
+
+<script src="main/script.js"></script>
+</body>
+</html>
