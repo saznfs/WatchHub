@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchHub</title>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="main/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="main/favicon/favicon-16x16.png">
+	<link rel="manifest" href="main/favicon/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="main/styles.css">
+	<link rel="stylesheet" href="order-confirmation/styles.css">
+	<script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+	
+
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fa-solid fa-phone"></i> +94772998266 |&nbsp;
+            <i class="fa-solid fa-envelope"></i> watchhub@gmail.com
+        </div>
+        <div class="scrolling-container">
+            <div class="scrolling-text">
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000
+            </div>
+        </div>
+    </div>
+
+    
+    <header>
+		
+		
+		<div class="hamburger" onclick="toggleMenu()">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+
+		
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="close-btn" onclick="closeMenu()"><img src="main/icons/close.png" alt="close icon" /></button>
+			<div class="ham-menu-login">
+				<a href="login.html">
+					<lord-icon
+						src="https://cdn.lordicon.com/kdduutaw.json"
+						trigger="loop"
+						delay="1000"
+						state="hover-looking-around"
+						colors="primary:#121331,secondary:#000000">
+					</lord-icon>  
+					LOG IN
+				</a>
+			</div>
+			
+			<ul class="mobile-nav-list">
+				<li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+			</ul>
+			
+			<div class="contact-mobile-menu">
+				<div class="contact">
+					<i class="fa-solid fa-phone"></i> +94-77-2998266
+					<br>
+					<br>
+					<i class="fa-solid fa-envelope"></i> <span>watchhub@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        <div class="logo">
+            <a href="index.html">
+				<img src="main/logo/logo1.png" alt="WatchHub Logo" class="header-logo" />
+			</a>
+        </div>
+		
+        <nav>
+            <ul>
+                <li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
+            </ul>
+        </nav>
+		
+        <div class="nav-icons">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <lord-icon
+					src="https://cdn.lordicon.com/wjyqkiew.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					style="width:2.1vw;height:2.1vw">
+				</lord-icon>
+            </div>
+			
+			<a href="login.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/kdduutaw.json"
+					trigger="loop"
+					delay="1000"
+					state="hover-looking-around"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="wishlist/wishlist.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/aydxrkfl.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="card/card.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/slkvcfos.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					class="addtocard-icon">
+				</lord-icon>
+			</a>
+
+        </div>
+		
+    </header>
+	
+
+		<div class="mobile-search">
+			
+			<lord-icon
+			  src="https://cdn.lordicon.com/wjyqkiew.json"
+			  trigger="loop"
+			  delay="1000"
+			  colors="primary:#121331,secondary:#000000"
+			  style="width: 17px; height: 17px;">
+			</lord-icon>
+			<input type="text" placeholder="Search">
+		</div>
+	
+	
+	
+	<div class="container">
+		<h1 class="thank-you">Thanks for Your Order!</h1>
+		<p class="info">We'll send an order confirmation letter to your email.</p>
+
+		<div class="order-summary">
+			<p class="order-number">Order Number: #22467272</p>
+			<p>Shipping Address:</p>
+			<p>No. 123, Colombo Road, Negombo, Sri Lanka</p>
+		</div>
+
+		<div class="button-group">
+			<a class="my-orders-link" href="my-orders.html">Visit My Orders Page</a>
+			<a class="back-home-btn" href="index.html">Back to Home</a>
+		</div>
+
+		<div class="tracking-info">
+			<p><strong>Tracking ID:</strong> SLXTRK23456</p>
+			<p><strong>Estimated Delivery:</strong> 3-5 Business Days</p>
+			<p><strong>Status:</strong> Order Packed & Ready for Shipment</p>
+		</div>
+
+		<div class="shipment-details">
+			<h2 class="section-title">Shipment Details</h2>
+
+				<div class="product">
+					<img src="watches/images/watch1/watch1.jpg" alt="Watch 1">
+					<div class="product-details">
+						<h4>Luxury Chrono Watch</h4>
+						<p>Shop: WatchHub Official</p>
+						<span>Price: Rs. 5,500 | Qty: 1</span>
+					</div>
+			  </div>
+		</div>
+
+		<div class="fresh-picks">
+		  <h2 class="section-title">Fresh Picks for You</h2>
+		  <div class="products-grid">
+			<div class="product-card">
+			  <img src="watches/images/watch1/watch1.jpg" alt="Watch 3">
+			  <h5>Black Steel Watch</h5>
+			  <span>Rs. 3,900</span>
+			</div>
+			<div class="product-card">
+			  <img src="watches/images/watch1/watch1.jpg" alt="Watch 4">
+			  <h5>Leather Strap Watch</h5>
+			  <span>Rs. 2,800</span>
+			</div>
+			<div class="product-card">
+			  <img src="watches/images/watch1/watch1.jpg" alt="Watch 5">
+			  <h5>Classic Men's Watch</h5>
+			  <span>Rs. 6,500</span>
+			</div>
+			<div class="product-card">
+			  <img src="watches/images/watch1/watch1.jpg" alt="Watch 6">
+			  <h5>Rose Gold Watch</h5>
+			  <span>Rs. 5,200</span>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+
+		<footer class="footer">
+	  <div class="footer-container">
+		<div class="footer-left">
+		  <a href="index.html"><img src="main/logo/logo1.png" alt="WatchHub Logo" class="footer-logo" /></a>
+		  <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+		  <p>Be the first to hear about new arrivals, by-invitation-only sales and special events</p>
+		  <form class="subscribe-form">
+			<input type="email" placeholder="Email" required />
+			<button type="submit">Subscribe</button>
+		  </form>
+		</div>
+
+		<div class="footer-links">
+		  <div class="footer-column policies">
+			<h4>Policies & Orders</h4>
+			<ul>
+			  <li><a href="authenticity-guarantee.html">Authenticity Guarantee</a></li>
+			  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+			  <li><a href="refund-policy.html">Return, Exchange & Refund Policy</a></li>
+			  <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+			  <li><a href="warranty-information.html">Warranty Information</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column help">
+			<h4>Help</h4>
+			<ul>
+			  <li><a href="login.html">My Account</a></li>
+			  <li><a href="track-my-order.html">Track my order</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column company">
+			<h4>Company</h4>
+			<ul>
+			  <li><a href="contact-us.html">Contact Us</a></li>
+			  <li><a href="stores.html">Our Stores</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column social">
+			<h4>Stay connected</h4>
+			<div class="social-icons">
+			  <a href="https://ig.me/m/saz_nfs"><i class="fab fa-instagram"></i></a>
+			  <a href="https://m.me/mohamed.zazni.3"><i class="fab fa-facebook-f"></i></a>
+			  <a href="https://x.com/saz_nfs"><i class="fab fa-twitter"></i></a>
+			  <a href="https://wa.me/94772998266?text=Hi!%20How%20can%20i%20help%20you%20?"><i class="fa-brands fa-whatsapp"></i></a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="footer-bottom">
+		<p class="copyright">© 2025, WatchHub — All Rights Reserved</p>
+	  </div>
+	</footer>
+	
+	
+	<div id="discountModal" class="modal">
+	  <div class="modal-content">
+		<span class="close-btn" onclick="closeModal()">&times;</span>
+		<h2>Newsletter</h2>
+		<p>Subscribe Now to get exclusive member benefits and get special offer of <strong>10%</strong> to get you started</p>
+		<ul>
+		  <li>✅ The welcome voucher is non-transferable and redeemable only at our store</li>
+		  <li>✅ Discount applicable only on watches and selected products</li>
+		  <li>✅ You can unsubscribe anytime</li>
+		</ul>
+		<h3>Discount unlocked 🎉</h3>
+		<p>Thanks for subscribing. Copy your discount code and apply to your next order.</p>
+		<div class="discount-code">
+		  <input type="text" value="WELCOME10" readonly>
+		  <i class="ri-file-copy-line copy-icon" onclick="copyCode()"></i>
+		</div>
+	  </div>
+	</div>
+	
+<script src="main/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchHub</title>
+	
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="main/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="main/favicon/favicon-16x16.png">
+	<link rel="manifest" href="main/favicon/site.webmanifest">
+	
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="index/styles.css">
+	<link rel="stylesheet" href="offers/styles.css">
+	<script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+	
+
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fa-solid fa-phone"></i> +94772998266 |&nbsp;
+            <i class="fa-solid fa-envelope"></i> watchhub@gmail.com
+        </div>
+        <div class="scrolling-container">
+            <div class="scrolling-text">
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				Free Shipping, Ship in 24 hours &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10% off for new users, use code WELCOME10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Islandwide Free Delivery on Orders Above Rs.7000
+            </div>
+        </div>
+    </div>
+
+ 
+    <header>
+		
+		
+		<div class="hamburger" onclick="toggleMenu()">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+
+		
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="close-btn" onclick="closeMenu()"><img src="main/icons/close.png" alt="close icon" /></button>
+			<div class="ham-menu-login">
+				<a href="login.html">
+					<lord-icon
+						src="https://cdn.lordicon.com/kdduutaw.json"
+						trigger="loop"
+						delay="1000"
+						state="hover-looking-around"
+						colors="primary:#121331,secondary:#000000">
+					</lord-icon>  
+					LOG IN
+				</a>
+			</div>
+			
+			<ul class="mobile-nav-list">
+				<li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+			</ul>
+			
+			<div class="contact-mobile-menu">
+				<div class="contact">
+					<i class="fa-solid fa-phone"></i> +94-77-2998266
+					<br>
+					<br>
+					<i class="fa-solid fa-envelope"></i> <span>watchhub@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        <div class="logo">
+            <a href="index.html">
+				<img src="main/logo/logo1.png" alt="WatchHub Logo" class="header-logo" />
+			</a>
+        </div>
+		
+        <nav>
+            <ul>
+                <li><a href="special-offers.html">SPECIAL OFFERS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="luxury.html">LUXURY</a></li>
+                <li><a href="stores.html">STORES</a></li>
+            </ul>
+        </nav>
+		
+        <div class="nav-icons">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <lord-icon
+					src="https://cdn.lordicon.com/wjyqkiew.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					style="width:2.1vw;height:2.1vw">
+				</lord-icon>
+            </div>
+			
+			<a href="login.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/kdduutaw.json"
+					trigger="loop"
+					delay="1000"
+					state="hover-looking-around"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="wishlist/wishlist.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/aydxrkfl.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000">
+				</lord-icon>
+			</a>
+			
+			<a href="card/card.html">
+				<lord-icon
+					src="https://cdn.lordicon.com/slkvcfos.json"
+					trigger="loop"
+					delay="1000"
+					colors="primary:#121331,secondary:#000000"
+					class="addtocard-icon">
+				</lord-icon>
+			</a>
+
+        </div>
+		
+    </header>
+	
+
+		<div class="mobile-search">
+			
+			<lord-icon
+			  src="https://cdn.lordicon.com/wjyqkiew.json"
+			  trigger="loop"
+			  delay="1000"
+			  colors="primary:#121331,secondary:#000000"
+			  style="width: 17px; height: 17px;">
+			</lord-icon>
+			<input type="text" placeholder="Search">
+		</div>
+	
+	<div class="luxury-page">
+		  <aside class="filter-sidebar">
+			  <div class="filter-section">
+				<button class="filter-header">GENDER</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Men <span>(177)</span></label>
+				  <label><input type="checkbox" /> Unisex <span>(20)</span></label>
+				  <label><input type="checkbox" /> Women <span>(102)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">BRAND</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Philipp Plein <span>(57)</span></label>
+				  <label><input type="checkbox" /> Plein Sport <span>(15)</span></label>
+				  <label><input type="checkbox" /> Versace <span>(10)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">MODEL</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Kull Synthetic <span>(3)</span></label>
+				  <label><input type="checkbox" /> Aion <span>(4)</span></label>
+				  <label><input type="checkbox" /> Combat <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">PRODUCT TYPE</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Watch <span>(167)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">PRICE (Rs)</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> 1000 - 5000 <span>(3)</span></label>
+				  <label><input type="checkbox" /> 5000 - 10,000 <span>(4)</span></label>
+				  <label><input type="checkbox" /> 10,000 - 20,000 <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">DISCOUNT</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> No Discount <span>(3)</span></label>
+				  <label><input type="checkbox" /> 1% - 5% <span>(4)</span></label>
+				  <label><input type="checkbox" /> 5% - 10% <span>(5)</span></label>
+				  <label><input type="checkbox" /> 10% - 20% <span>(5)</span></label>
+				  <label><input type="checkbox" /> 20% - 40% <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">CASE SIZE</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> 38 - 40 <span>(3)</span></label>
+				  <label><input type="checkbox" /> 41 - 43 <span>(4)</span></label>
+				  <label><input type="checkbox" /> 44 - 46 <span>(5)</span></label>
+				  <label><input type="checkbox" /> 47 - 49 <span>(5)</span></label>
+				  <label><input type="checkbox" /> 50 - 52 <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">DIAL COLOR</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Beige <span>(3)</span></label>
+				  <label><input type="checkbox" /> Black <span>(4)</span></label>
+				  <label><input type="checkbox" /> Blue <span>(5)</span></label>
+				  <label><input type="checkbox" /> Brown <span>(5)</span></label>
+				  <label><input type="checkbox" /> Champagne <span>(5)</span></label>
+				  <label><input type="checkbox" /> Gold <span>(5)</span></label>
+				  <label><input type="checkbox" /> Green <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">STRAP COLOR</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Beige <span>(3)</span></label>
+				  <label><input type="checkbox" /> Black <span>(4)</span></label>
+				  <label><input type="checkbox" /> Blue <span>(5)</span></label>
+				  <label><input type="checkbox" /> Brown <span>(5)</span></label>
+				  <label><input type="checkbox" /> Champagne <span>(5)</span></label>
+				  <label><input type="checkbox" /> Gold <span>(5)</span></label>
+				  <label><input type="checkbox" /> Green <span>(5)</span></label>
+				</div>
+			  </div>
+
+			  <div class="filter-section">
+				<button class="filter-header">DIAL SHAPE</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Cushion <span>(3)</span></label>
+				  <label><input type="checkbox" /> Octagonal <span>(4)</span></label>
+				  <label><input type="checkbox" /> Round <span>(5)</span></label>
+				</div>
+			  </div>
+			  
+			  <div class="filter-section">
+				<button class="filter-header">MOVEMENT</button>
+				<div class="filter-options">
+				  <label><input type="checkbox" /> Automatic <span>(3)</span></label>
+				  <label><input type="checkbox" /> Chrono Quartz <span>(4)</span></label>
+				  <label><input type="checkbox" /> Quartz <span>(5)</span></label>
+				</div>
+			  </div>
+		  </aside>
+
+		  <main class="products">
+			<div class="top-bar1">
+			  <div class="view-toggle">
+				<span>View as</span>
+				<button class="grid-view active">⬛</button>
+				<button class="list-view">📄</button>
+			  </div>
+			  <div class="product-count">320 products</div>
+			  <div class="sort-by">
+				<label>SORT BY:</label>
+				<select>
+				  <option>New Launch</option>
+				  <option>Price: Low to High</option>
+				  <option>Price: High to Low</option>
+				</select>
+			  </div>
+			</div>
+
+			<div class="product-grid">
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (1).jpg" alt="Watch 1" />
+					<p class="title">Timex Fria Blue Round Dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 9,495</span>
+					  <span class="new-price">Rs. 6,647</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+			  
+			    <a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (9).jpg" alt="Watch 2" />
+					<p class="title">nautica koh may bay stainless</p>
+					<p class="price">
+					  <span class="old-price">Rs. 13,995</span>
+					  <span class="new-price">Rs. 8,397</span>
+					  <span class="discount">40% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (12).jpg" alt="Watch 12" />
+					<p class="title">timex fashion black round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 7,295</span>
+					  <span class="new-price">Rs. 5,107</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (3).jpg" alt="Watch 3" />
+					<p class="title">nautica tin can bay silver round</p>
+					<p class="price">
+					  <span class="old-price">Rs. 18,995</span>
+					  <span class="new-price">Rs. 11,397</span>
+					  <span class="discount">40% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (4).jpg" alt="Watch 4" />
+					<p class="title">timex frial black round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 5,995</span>
+					  <span class="new-price">Rs. 4,197</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (5).jpg" alt="Watch 5" />
+					<p class="title">timex fria blue round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 5,995</span>
+					  <span class="new-price">Rs. 4,197</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (6).jpg" alt="Watch 6" />
+					<p class="title">nautica pacific beach black</p>
+					<p class="price">
+					  <span class="old-price">Rs. 10,995</span>
+					  <span class="new-price">Rs. 6,597</span>
+					  <span class="discount">40% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (7).jpg" alt="Watch 7" />
+					<p class="title">timex empera champagne</p>
+					<p class="price">
+					  <span class="old-price">Rs. 7,795</span>
+					  <span class="new-price">Rs. 5,457</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (8).jpg" alt="Watch 8" />
+					<p class="title">timex empera silver round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 7,995</span>
+					  <span class="new-price">Rs. 5,597</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (13).jpg" alt="Watch 13" />
+					<p class="title">timex fashion beige round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 6,995</span>
+					  <span class="new-price">Rs. 4,897</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (10).jpg" alt="Watch 10" />
+					<p class="title">timex empera blue round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 6,295</span>
+					  <span class="new-price">Rs. 4,407</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+				
+				<a href="watch1.html" class="product-link">
+				  <div class="product-card">
+					<img src="luxury-page/images/watch (11).jpg" alt="Watch 11" />
+					<p class="title">timex fashion blue round dial</p>
+					<p class="price">
+					  <span class="old-price">Rs. 6,795</span>
+					  <span class="new-price">Rs. 4,757</span>
+					  <span class="discount">30% OFF</span>
+					</p>
+				  </div>
+				</a>
+			  
+			</div>
+		  </main>
+		</div>
+	
+	
+		<footer class="footer">
+	  <div class="footer-container">
+		<div class="footer-left">
+		  <a href="index.html"><img src="main/logo/logo1.png" alt="WatchHub Logo" class="footer-logo" /></a>
+		  <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+		  <p>Be the first to hear about new arrivals, by-invitation-only sales and special events</p>
+		  <form class="subscribe-form">
+			<input type="email" placeholder="Email" required />
+			<button type="submit">Subscribe</button>
+		  </form>
+		</div>
+
+		<div class="footer-links">
+		  <div class="footer-column policies">
+			<h4>Policies & Orders</h4>
+			<ul>
+			  <li><a href="authenticity-guarantee.html">Authenticity Guarantee</a></li>
+			  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+			  <li><a href="refund-policy.html">Return, Exchange & Refund Policy</a></li>
+			  <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+			  <li><a href="warranty-information.html">Warranty Information</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column help">
+			<h4>Help</h4>
+			<ul>
+			  <li><a href="login.html">My Account</a></li>
+			  <li><a href="track-my-order.html">Track my order</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column company">
+			<h4>Company</h4>
+			<ul>
+			  <li><a href="contact-us.html">Contact Us</a></li>
+			  <li><a href="stores.html">Our Stores</a></li>
+			</ul>
+		  </div>
+
+		  <div class="footer-column social">
+			<h4>Stay connected</h4>
+			<div class="social-icons">
+			  <a href="https://ig.me/m/saz_nfs"><i class="fab fa-instagram"></i></a>
+			  <a href="https://m.me/mohamed.zazni.3"><i class="fab fa-facebook-f"></i></a>
+			  <a href="https://x.com/saz_nfs"><i class="fab fa-twitter"></i></a>
+			  <a href="https://wa.me/94772998266?text=Hi!%20How%20can%20i%20help%20you%20?"><i class="fa-brands fa-whatsapp"></i></a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="footer-bottom">
+		<p class="copyright">© 2025, WatchHub — All Rights Reserved</p>
+	  </div>
+	</footer>
+	
+
+	<div id="discountModal" class="modal">
+	  <div class="modal-content">
+		<span class="close-btn" onclick="closeModal()">&times;</span>
+		<h2>Newsletter</h2>
+		<p>Subscribe Now to get exclusive member benefits and get special offer of <strong>10%</strong> to get you started</p>
+		<ul>
+		  <li>✅ The welcome voucher is non-transferable and redeemable only at our store</li>
+		  <li>✅ Discount applicable only on watches and selected products</li>
+		  <li>✅ You can unsubscribe anytime</li>
+		</ul>
+		<h3>Discount unlocked 🎉</h3>
+		<p>Thanks for subscribing. Copy your discount code and apply to your next order.</p>
+		<div class="discount-code">
+		  <input type="text" value="WELCOME10" readonly>
+		  <i class="ri-file-copy-line copy-icon" onclick="copyCode()"></i>
+		</div>
+	  </div>
+	</div>
+	
+<script src="index/script.js"></script>
+
+<script>
+  const headers = document.querySelectorAll('.filter-header');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const section = header.parentElement;
+      section.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
